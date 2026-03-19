@@ -1,0 +1,29 @@
+.color {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+#yellow {
+    background-color: yellow;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.active {
+    opacity: 0.5;
+}
