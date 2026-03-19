@@ -37,7 +37,12 @@ function showSequence() {
 
 function handleColorClick(color) {
     userSequence.push(color);
+    const colorElement = document.getElementById(color);
     const currentIndex = userSequence.length - 1;
+    colorElement.classList.add("active");
+    setTimeout(() => {
+        colorElement.classList.remove("active");
+    }, 500);
     if (userSequence[currentIndex] !== sequence[currentIndex]) {
         alert("Game Over! Try again.");
         startGame();
