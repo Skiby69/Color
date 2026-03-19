@@ -14,6 +14,7 @@ function startGame() {
 
 function nextLevel() {
     userSequence = [];
+    levelElement.style.color = `rgb(${level * 2},0,0)`;
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     sequence.push(randomColor);
     showSequence();
